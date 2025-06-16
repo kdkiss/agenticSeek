@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="app">
-      <nav className="navbar">
+      <nav className="navbar" aria-label="Main navigation">
         <div className="logo">AgenticSeek</div>
         <ul className="nav-links">
           <li><a href="#features">Features</a></li>
@@ -19,39 +19,41 @@ function App() {
         <a href="#features" className="btn-primary">Get Started</a>
       </header>
 
-      <section id="features" className="features">
-        <h2>Key Features</h2>
-        <div className="feature-grid">
-          <div className="feature-card">
-            <h3>Local Data</h3>
-            <p>Everything runs on your device with zero cloud dependency.</p>
+      <main>
+        <section id="features" className="features">
+          <h2>Key Features</h2>
+          <div className="feature-grid">
+            <div className="feature-card">
+              <h3>Local Data</h3>
+              <p>Everything runs on your device with zero cloud dependency.</p>
+            </div>
+            <div className="feature-card">
+              <h3>Smart Browsing</h3>
+              <p>Autonomously search and extract information from the web.</p>
+            </div>
+            <div className="feature-card">
+              <h3>Code Assistant</h3>
+              <p>Write, debug and execute code across many languages.</p>
+            </div>
           </div>
-          <div className="feature-card">
-            <h3>Smart Browsing</h3>
-            <p>Autonomously search and extract information from the web.</p>
-          </div>
-          <div className="feature-card">
-            <h3>Code Assistant</h3>
-            <p>Write, debug and execute code across many languages.</p>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="testimonials" className="testimonials">
-        <h2>What People Say</h2>
-        <div className="testimonial-grid">
-          <div className="testimonial">
-            <img src="https://via.placeholder.com/48" alt="" />
-            <p>"AgenticSeek has streamlined my workflow like nothing else."</p>
-            <span>- Alex</span>
+        <section id="testimonials" className="testimonials">
+          <h2>What People Say</h2>
+          <div className="testimonial-grid">
+            <div className="testimonial">
+              <img src="https://via.placeholder.com/48" alt="User avatar" />
+              <p>"AgenticSeek has streamlined my workflow like nothing else."</p>
+              <span>- Alex</span>
+            </div>
+            <div className="testimonial">
+              <img src="https://via.placeholder.com/48" alt="User avatar" />
+              <p>"A truly private AI solution that I can trust."</p>
+              <span>- Taylor</span>
+            </div>
           </div>
-          <div className="testimonial">
-            <img src="https://via.placeholder.com/48" alt="" />
-            <p>"A truly private AI solution that I can trust."</p>
-            <span>- Taylor</span>
-          </div>
-        </div>
-      </section>
+        </section>
+      </main>
 
       <footer id="footer" className="footer">
         <p>&copy; {new Date().getFullYear()} AgenticSeek</p>
